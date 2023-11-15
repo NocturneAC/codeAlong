@@ -1,16 +1,18 @@
+// identified this as the index.js when ran "npm init" through the terminal
+
 const fs = require("fs");
 
 const action = process.argv[2];
 
 function printAllNotes() {
-    fs.readFile("./data.json", "utf8"), (err, data) => {
+    fs.readFile("./data.json", "utf8", (err, data) => {
         const notes = JSON.parse(data);
         console.log("Here are all your notes:\n\n");
         for (let i = 0; i < notes.length; i++) {
             console.log(notes[i].title + "\n");
             console.log(notes[i].text + "\n");
         }
-    }
+    });
 }
 
 function printNote(id) {

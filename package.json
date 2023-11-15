@@ -1,0 +1,18 @@
+{
+  "name": "codealong",
+  "version": "1.0.0",
+  "description": "codeAlong example description",
+  "main": "crudAlong.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sample",
+    "keywords"
+  ],
+  "author": "Nocturne",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
