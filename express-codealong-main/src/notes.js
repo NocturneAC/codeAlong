@@ -1,4 +1,5 @@
 const express = require("express");
+// fs stands for File System
 const fs = require("fs").promises;
 
 const app = express();
@@ -6,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.listen(3000, () => {
-  console.log("Our note-taking app is now listening on http://localhost:3000");
+  console.log("Our note-taking app is now listening on http://localhost:3000. Also, it's Taco Tuesday!");
 });
 
 const getAllNotes = async () => {
